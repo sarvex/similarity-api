@@ -1,7 +1,7 @@
-import * as React from 'react'
-import { VariantProps, cva } from 'class-variance-authority'
+import * as React from 'react';
+import { VariantProps, cva } from 'class-variance-authority';
 
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
 
 export const paragraphVariants = cva(
   'max-w-prose text-slate-700 dark:text-slate-300 mb-2 text-center',
@@ -15,8 +15,8 @@ export const paragraphVariants = cva(
     defaultVariants: {
       size: 'default',
     },
-  }
-)
+  },
+);
 
 interface ParagraphProps
   extends React.HTMLAttributes<HTMLParagraphElement>,
@@ -31,10 +31,10 @@ const Paragraph = React.forwardRef<HTMLParagraphElement, ParagraphProps>(
         className={cn(paragraphVariants({ size, className }))}>
         {children}
       </p>
-    )
-  }
-)
+    );
+  },
+);
 
-Paragraph.displayName = 'Paragraph'
+Paragraph.displayName = 'Paragraph';
 
-export default Paragraph
+export default Paragraph;
