@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import { ButtonHTMLAttributes, FC } from 'react';
 import Icons from './Icons';
-import { Button } from './ui/Button';
+import { Button } from '@/ui/Button';
 
 interface BackButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 

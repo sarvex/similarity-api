@@ -12,8 +12,8 @@ import { revokeApiKey } from '@/helpers/revoke-api-key';
 import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { FC, useState } from 'react';
-import { Button } from './ui/Button';
-import { toast } from './ui/Toast';
+import { Button } from '@/ui/Button';
+import { toast } from '@/ui/toast';
 
 interface ApiKeyOptionsProps {
   // passing of entire object not allowed due to date property not being serializable
